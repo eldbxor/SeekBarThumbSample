@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <com.example.taek.seekbarthumbsample.TextThumbSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seekbar_width"
+        android:background="@color/color_seekbar_dialog_background"
+        android:progress="6"
+        android:progressDrawable="@drawable/seekbar_progress_drawable"
+        android:thumb="@drawable/shape_seekbar_text_thumb"
+        android:max="29"/>
+    <Button android:id="@+id/button_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar"
+        android:text="확인"
+        android:onClick="onClick"/>
+</RelativeLayout>

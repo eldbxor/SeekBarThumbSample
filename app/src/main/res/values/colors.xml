@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- seekbar color -->
+    <color name="color_seekbar_dialog_background">#EDEDED</color>
+    <!-- thumb color -->
+    <color name="color_thumb_background">#CCCCCC</color>
+    <color name="color_thumb_text">#FFFFFF</color>
+
+    <!-- progress color -->
+    <color name="seekbar_progress">#CCCCCC</color>
+    <color name="seekbar_progress_bg">#FFFFFF</color>
+</resources>
