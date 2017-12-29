@@ -10,6 +10,9 @@ import android.widget.SeekBar;
  * Created by Taek on 2017-12-28.
  */
 
+/***************************************************************************************************
+ *                                         사용하지 않음                                           *
+ ***************************************************************************************************/
 public class SeekBarDialog extends Activity implements View.OnClickListener {
     private final int SEEKBAR_REQUEST_CODE = 1;
     private SeekBar seekBar;

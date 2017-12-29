@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center">
-    <com.example.taek.seekbarthumbsample.TextThumbSeekBar
-        android:id="@+id/seekbar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/seekbar_width"
-        android:background="@color/color_seekbar_dialog_background"
-        android:progress="6"
-        android:progressDrawable="@drawable/seekbar_progress_drawable"
-        android:thumb="@drawable/shape_seekbar_text_thumb"
-        android:max="29"/>
-    <Button android:id="@+id/button_seekbar"
-        android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekbar"
-        android:text="확인"
-        android:onClick="onClick"/>
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/color_action_bar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="16dp"
+                android:textColor="@color/color_button_text"
+                android:textSize="@dimen/action_bar_text_size"
+                android:text="열림시간"/>
+
+            <ImageView android:id="@+id/action_bar_close_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/popup_close_img"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/color_seekbar_dialog_background"
+            android:layout_gravity="center_vertical">
+
+            <com.example.taek.seekbarthumbsample.TextThumbSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekbar_width"
+                android:layout_centerInParent="true"
+                android:background="@color/color_seekbar_dialog_background"
+                android:progress="6"
+                android:progressDrawable="@drawable/seekbar_progress_drawable"
+                android:thumb="@drawable/shape_seekbar_text_thumb"
+                android:max="29"/>
+        </RelativeLayout>
+
+        <Button android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/seekbar"
+            android:background="@color/color_button_bg"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_text_size"
+            android:text="확인"/>
+        <!--
+        <Button android:id="@+id/button_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbar"
+            android:text="확인"
+            android:onClick="onClick"/>-->
+
+    </LinearLayout>
 </RelativeLayout>

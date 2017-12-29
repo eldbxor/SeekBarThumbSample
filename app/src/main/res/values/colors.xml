@@ -4,6 +4,13 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="color_dialog_bg">#00000000</color>
+
+    <!-- action bar & button color -->
+    <color name="color_action_bar_bg">#000000</color>
+    <color name="color_button_bg">#000000</color>
+    <color name="color_button_text">#FFFFFF</color>
+
     <!-- seekbar color -->
     <color name="color_seekbar_dialog_background">#EDEDED</color>
     <!-- thumb color -->
